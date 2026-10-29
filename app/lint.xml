@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    BarcodeScannerScreen reads ImageProxy.getImage() from CameraX, which is
+    flagged with @ExperimentalGetImage. Lint only honours that opt-in when it
+    is written as the Java-style propagation annotation, which would then have
+    to be repeated on every caller up to the NavHost. Accept the marker
+    project-wide instead — the call site is still marked with @OptIn in source.
+-->
+<lint>
+    <issue id="UnsafeOptInUsageError">
+        <option name="opt-in" value="androidx.camera.core.ExperimentalGetImage" />
+    </issue>
+</lint>

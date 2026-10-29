@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Export files live in app-specific storage; nothing else is shared. -->
+<paths>
+    <external-files-path name="exports" path="." />
+    <files-path name="internal_exports" path="." />
+</paths>
